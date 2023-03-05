@@ -9,6 +9,10 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import java.time.Duration;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
@@ -16,7 +20,7 @@ public class AppOrderPositiveTest {
     private WebDriver driver;
 
     @BeforeAll
-    public static void setup() {
+    public static void setupAll() {
         WebDriverManager.chromedriver().setup();
     }
 
@@ -45,4 +49,5 @@ public class AppOrderPositiveTest {
         var actualText = driver.findElement(By.cssSelector("[data-test-id=order-success]")).getText().trim();
         assertEquals("Ваша заявка успешно отправлена! Наш менеджер свяжется с вами в ближайшее время.", actualText);
     }
+    
 }
