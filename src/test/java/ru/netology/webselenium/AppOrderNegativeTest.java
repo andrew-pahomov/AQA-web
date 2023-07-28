@@ -18,7 +18,7 @@ public class AppOrderNegativeTest {
 
     @BeforeAll
     public static void setup() {
-//        WebDriverManager.chromedriver().setup();
+        WebDriverManager.chromedriver().setup();
     }
 
     @BeforeEach
