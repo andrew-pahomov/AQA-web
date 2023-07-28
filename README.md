@@ -1,1 +1,1 @@
-[![Build status](https://ci.appveyor.com/api/projects/status/hpknbrh4es81cykp/branch/master?svg=true)](https://ci.appveyor.com/project/andrew-pahomov/aqa0-2-1-web/branch/master)
+[![Build status](https://ci.appveyor.com/api/projects/status/nhoc02u1a17ln36y/branch/master?svg=true)](https://ci.appveyor.com/project/andrew-pahomov/aqa-web/branch/master)
