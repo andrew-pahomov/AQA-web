@@ -1,1 +1,2 @@
+[![Java CI with Gradle](https://github.com/andrew-pahomov/AQA-web/actions/workflows/gradle.yml/badge.svg)](https://github.com/andrew-pahomov/AQA-web/actions/workflows/gradle.yml)
 [![Build status](https://ci.appveyor.com/api/projects/status/nhoc02u1a17ln36y/branch/master?svg=true)](https://ci.appveyor.com/project/andrew-pahomov/aqa-web/branch/master)
