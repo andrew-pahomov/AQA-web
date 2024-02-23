@@ -1,6 +1,6 @@
 package ru.netology.webselenium;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
+//import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
@@ -16,10 +16,10 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 public class AppOrderNegativeTest {
     private WebDriver driver;
 
-    @BeforeAll
-    public static void setup() {
-        WebDriverManager.chromedriver().setup();
-    }
+//    @BeforeAll
+//    public static void setup() {
+////        WebDriverManager.chromedriver().setup();
+//    }
 
     @BeforeEach
     public void beforeEach() {
@@ -55,6 +55,7 @@ public class AppOrderNegativeTest {
         driver.findElement(By.cssSelector("button.button")).click();
         assertEquals("Поле обязательно для заполнения",
                 driver.findElement(By.cssSelector("[data-test-id=name].input_invalid .input__sub")).getText().trim());
+        assertTrue(driver.findElement(By.cssSelector("[data-test-id=name].input_invalid .input__sub")).isDisplayed());
     }
 
     @Test
